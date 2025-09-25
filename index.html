@@ -38,14 +38,9 @@
   <section class="max-w-7xl mx-auto p-6 md:p-8 grid lg:grid-cols-2 gap-8">
     
     <div class="space-y-4">
-      <div id="mainDisplay" class="relative rounded-2xl shadow-2xl shimmer soft-border w-full aspect-[6/5] overflow-hidden group">
+      <div id="mainDisplay" class="relative rounded-2xl  shimmer soft-border w-full h-[750px] aspect-[6/5]  overflow-hidden group">
         <!-- default main as image -->
         <img id="mainImage" src="Images/main iamge.jpg" alt="Product Image" class="w-full h-full object-cover transition duration-700 group-hover:scale-[1.03] flex space-x-3" data-aos="zoom-in"/>
-        <!-- corner badges -->
-        <div class="absolute top-3 left-3 flex items-center gap-2">
-          <span class="bg-yellow-600 text-white text-xs px-2 py-1 rounded-full shadow">Authentic</span>
-          <span class="bg-white/90 text-yellow-700 text-xs px-2 py-1 rounded-full shadow border border-yellow-200">Energized</span>
-        </div>
        
       </div>
 
@@ -60,7 +55,7 @@
     </div>
 
     <!-- Product Details Card -->
-    <div class="glass soft-border rounded-3xl shadow-2xl p-6 md:p-8 fadeSlide">
+    <div class="glass soft-border rounded-2xl  p-6 md:p-8 fadeSlide">
       <div class="flex items-start justify-between gap-4 glass rounded-2xl p-6" data-aos="fade-left">
         <div>
           <p class="uppercase tracking-wide text-gray-500 text-xs">Yagya Puja</p>
@@ -94,7 +89,7 @@
       <div class="mt-4 grid grid-cols-3 gap-3 text-center text-xs">
         <div class="bg-white rounded-xl border p-3 hover:scale-105 hover:shadow-md hover:bg-yellow-500">✅ Certified Priests</div>
         <div class="bg-white rounded-xl border p-3 hover:scale-105 hover:shadow-md hover:bg-yellow-500">🕉️ Vedic Rituals</div>
-        <div class="bg-white rounded-xl border p-3 hover:scale-105 hover:shadow-md hover:bg-yellow-500">🚚 Fast Delivery</div>
+        <div class="bg-white rounded-xl border p-3 hover:scale-105 hover:shadow-md hover:bg-yellow-500">🚚 Prasad Delivery</div>
       </div>
 
       <!-- Form -->
@@ -144,21 +139,61 @@
         </div>
       </div>
 
+       <!-- Date & Time Selection -->
+<div class="mt-6 grid md:grid-cols-3 gap-5">
+  <!-- User Choose -->
+  <div>
+    <label class="block text-sm font-medium">Choose Puja Date <span class="text-red-500">*</span></label>
+    <input type="date" class="mt-1 w-full px-4 py-2.5 border rounded-lg shadow-sm focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"/>
+  </div>
+  <div>
+    <label class="block text-sm font-medium">Choose Puja Time <span class="text-red-500">*</span></label>
+    <input type="time" class="mt-1 w-full px-4 py-2.5 border rounded-lg shadow-sm focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"/>
+  </div>
+
+  <!-- Recommendation -->
+  <div>
+    <label class="block text-sm font-medium">Recommended Muhurat</label>
+    <input type="text" value="28 Sept 2025, 10:30 AM" readonly class="mt-1 w-full px-4 py-2.5 border rounded-lg bg-gray-100 text-gray-600 shadow-sm"/>
+  </div>
+</div>
+
+<!-- Consult Option -->
+<div class="mt-4 flex items-center gap-2">
+  <input type="checkbox" id="consultOpt" class="h-4 w-4 text-yellow-600 border-gray-300 rounded"/>
+  <label for="consultOpt" class="text-sm text-gray-700">Consult with Pandit ji for best date & time</label>
+</div>
+
+
       <button id="bookBtn" class="mt-6 w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3.5 rounded-xl shadow-lg hover:shadow-amber-300/40 transition transform active:scale-[.98] hover:scale-105 hover:shadow-mdc hover:bg-yellow-700"> Book Now</button>
 
-      <!-- Sticky mobile CTA -->
-      <div class="lg:hidden fixed bottom-3 left-0 right-0 px-4">
-        <button class="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-3 rounded-xl shadow-xl">Book Bagalamukhi Puja – ₹1,150</button>
-      </div>
     </div>
   </section>
 
   <!-- Info Tabs (About/Benefits/FAQ/Shipping/Reviews) -->
   <section class="max-w-7xl mx-auto px-6 md:px-8 pb-16">
-    <div class="grid md:grid-cols-5 gap-6">
-      <div class="md:col-span-2 glass soft-border rounded-2xl p-6 glass rounded-2xl p-6" data-aos="fade-right">
-        <h3 class="text-xl font-bold gold-text mb-2">Benefits</h3>
-        <ul class="list-disc list-inside space-y-2 text-sm">
+
+    <div class="md:col-span-3 glass soft-border rounded-2xl p-6 glass rounded-2xl p-6" data-aos="fade-left">     
+         <h3 class="text-xl font-bold gold-text mb-3">About the Puja</h3>
+      <h5 class="text-lg font-semibold">Bagalamukhi Puja (Das Mahavidyas) </h5>
+      <p class="text-sm leading-7">Bagalamukhi, one of the Das Mahavidyas, is the goddess of power, victory, and protection. She is known to paralyze the negativity of enemies and safeguard devotees. Worship is considered highly auspicious for justice and triumph in complex situations.</p>
+      <h5 class="text-lg font-semibold">Significance and Importance of Bagalamukhi Puja</h5>
+      <ul class="list-disc list-inside space-y-2 text-sm">
+        <li>Neutralization of Enemies:- The puja is particularly powerful for those facing challenges from adversaries, whether in the form of legal disputes, rivalries, or jealousy. It neutralizes the malefic intents of enemies.</li>
+        <li>Speech and Communication:- Bagalamukhi is often invoked to improve communication and to silence harmful gossip or slander against the devotee.</li>
+        <li>Protection from Negativity:- The puja is believed to shield the devotee from evil eyes, curses, and negative energies.</li>
+        <li>Justice and Resolution:- It is highly recommended for individuals involved in court cases or any situation requiring justice to prevail.</li>
+        <li>Spiritual Empowerment:- Practicing Bagalamukhi worship fosters inner strength, courage, and confidence.</li>
+      <blockquote class="mt-4 border-l-4 border-yellow-500 pl-4 italic text-red-600 font-semibold">ॐ ह्लीं बगलामुखि सर्वदुष्टानां वाचं मुखं पदं स्तम्भय जिव्हां कीलय बुद्धिं विनाशय ह्लीं ॐ स्वाहा॥</blockquote>
+    </div>
+  
+
+
+  <div class="grid md:grid-cols-3 mt-4 gap-6">
+    <div class="md:col-span-3 glass soft-border rounded-2xl p-6 glass rounded-2xl p-6" data-aos="fade-left">
+
+      <h3 class="text-lg font-extrabold gold-text text-center mb-3">Benefits</h3>
+              <ul class="list-disc list-inside space-y-2 text-sm">
           <li class="font-medium mt-4">Victory Over Obstacles: The puja helps in overcoming hurdles in personal and professional life.</li>
           <li class="font-medium mt-4">Resolution of Disputes: It aids in resolving misunderstandings and conflicts, leading to peaceful outcomes.</li>
           <li class="font-medium mt-4">Enhanced Focus: Devotees experience an increase in mental clarity and concentration, which is beneficial for making decisions and achieving goals.</li>
@@ -166,26 +201,31 @@
           <li class="font-medium mt-4">Success in Legal and Financial Matters: Bagalamukhi puja is particularly effective for success in litigation and stabilizing financial situations.</li>
           <li class="font-medium mt-4">Spiritual Growth: It helps in developing a balanced mindset and spiritual detachment, leading to personal transformation. </li>
         </ul>
+    </div>
        
       </div>
-      <div class="md:col-span-3 glass soft-border rounded-2xl p-6 glass rounded-2xl p-6" data-aos="fade-left">
-        <h3 class="text-xl font-bold gold-text mb-3">About the Puja</h3>
-        <h5 class="text-lg font-semibold">Bagalamukhi Puja (Das Mahavidyas) </h5>
-        <p class="text-sm leading-7">Bagalamukhi, one of the Das Mahavidyas, is the goddess of power, victory, and protection. She is known to paralyze the negativity of enemies and safeguard devotees. Worship is considered highly auspicious for justice and triumph in complex situations.</p>
-        <h5 class="text-lg font-semibold">Significance and Importance of Bagalamukhi Puja</h5>
-        <ul class="list-disc list-inside space-y-2 text-sm">
-          <li>Neutralization of Enemies:- The puja is particularly powerful for those facing challenges from adversaries, whether in the form of legal disputes, rivalries, or jealousy. It neutralizes the malefic intents of enemies.</li>
-          <li>Speech and Communication:- Bagalamukhi is often invoked to improve communication and to silence harmful gossip or slander against the devotee.</li>
-          <li>Protection from Negativity:- The puja is believed to shield the devotee from evil eyes, curses, and negative energies.</li>
-          <li>Justice and Resolution:- It is highly recommended for individuals involved in court cases or any situation requiring justice to prevail.</li>
-          <li>Spiritual Empowerment:- Practicing Bagalamukhi worship fosters inner strength, courage, and confidence.</li>
-        <blockquote class="mt-4 border-l-4 border-yellow-500 pl-4 italic text-red-600 font-semibold">ॐ ह्लीं बगलामुखि सर्वदुष्टानां वाचं मुखं पदं स्तम्भय जिव्हां कीलय बुद्धिं विनाशय ह्लीं ॐ स्वाहा॥</blockquote>
-      </div>
-    </div>
 
-    <div class="mt-6 grid md:grid-cols-3 gap-6">
-      <div class="glass soft-border rounded-2xl p-6 glass rounded-2xl p-6" data-aos="fade-right">
-        <h3 class="text-lg font-bold gold-text mb-3">FAQ</h3>
+      <div class="grid md:grid-cols-3 mt-4 gap-6">
+        <div class="md:col-span-3 glass soft-border rounded-2xl p-6 glass rounded-2xl p-6" data-aos="fade-left">
+  
+          <h3 class="text-lg font-extrabold text-center gold-text mb-3">Puja Process</h3>
+          <ul class="list-disc list-inside space-y-2 text-sm">
+            <li class="font-medium mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li class="font-medium mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum!</li>
+            <li class="font-medium mt-4">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+            <li class="font-medium mt-4">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+            <li class="font-medium mt-4">Lorem ipsum dolor sit amet consectetur adipisicing..</li>
+            
+          </ul>
+  
+        </div>
+      </div>
+
+      
+      <div class="grid md:grid-cols-3 mt-4 gap-6">
+        <div class="md:col-span-3 glass soft-border rounded-2xl p-6 glass rounded-2xl p-6" data-aos="fade-left">
+
+          <h3 class="text-lg font-extrabold text-center gold-text mb-3">FAQ</h3>
         <details class="border rounded-lg mb-2 p-3 bg-white/70">
           <summary class="cursor-pointer font-semibold">Who should perform Bagalamukhi Puja? </summary>
           <p class="mt-2 text-sm">Those facing persistent struggles with enemies, legal issues, or negative influences should perform this puja. It is also beneficial for anyone seeking justice, protection, and empowerment.</p>
@@ -211,17 +251,13 @@
       <p class="mt-2 text-sm"> If performed improperly or without guidance, Bagalamukhi puja may not yield the desired results. Always consult a knowledgeable priest or guru.</p>
     </details>
       </div>
-      <div class="glass soft-border rounded-2xl p-6 glass rounded-2xl p-6" data-aos="fade-up">
-        <h3 class="text-lg font-bold gold-text mb-3">Shipping & Return Policy</h3>
-        <ul class="list-disc list-inside text-sm space-y-2">
-          <li>Processing: 1–2 business days</li>
-          <li>Energization: +1–2 days by certified priests</li>
-          <li>India Delivery: 4–7 business days</li>
-          <li>International: 10–15 business days</li>
-        </ul>
       </div>
-      <div class="glass soft-border rounded-2xl p-6 glass rounded-2xl p-6" data-aos="fade-left">
-        <h3 class="text-lg font-bold gold-text mb-3">Reviews</h3>
+
+      
+      <div class="grid md:grid-cols-3 mt-4 gap-6">
+        <div class="md:col-span-3 glass soft-border rounded-2xl p-6 glass rounded-2xl p-6" data-aos="fade-left">
+  
+          <h3 class="text-lg font-extrabold text-center gold-text mb-3">Reviews</h3>
         <div class="bg-white rounded-xl border p-4 mb-3">
           <p class="font-semibold">Arpit Pandey – ⭐⭐⭐⭐⭐</p>
           <p class="text-sm">Very powerful experience. Felt protected and calm.</p>
